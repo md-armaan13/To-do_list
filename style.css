@@ -1,6 +1,8 @@
 /* General Styles */
 html {
-  background: linear-gradient(to top left, rgb(40 180 135), rgb(125 213 111));
+  background: rgb(2,0,36);
+  background: linear-gradient(290deg, rgba(2,0,36,1) 0%, rgba(52,115,186,0.9051995798319328) 54%, rgba(16,172,204,1) 100%);
+  /* background: linear-gradient(to top left, rgb(40 180 135), rgb(125 213 111)); */
   color: white;
   height: 100vh;
   margin: 0 !important;
@@ -79,10 +81,11 @@ noscript {
 
 /* Title */
 h1 {
-  font-family: cursive;
+  font-family: sans-serif;
   font-size: 45px;
+  color: black;
   margin: 10px;
-  text-shadow: 3px 3px 5px #1d4e13;
+  text-shadow: 3px 2px 5px  #1d4e13;
 }
 /* ******************* */
 
@@ -143,14 +146,14 @@ button {
   font-size: 15px;
   font-weight: bold;
   color: rgb(103, 172, 34);
-  box-shadow: rgb(103, 172, 34) 3px 3px 5px 0px;
+  box-shadow: rgb(72, 134, 9) 3px 3px 5px 0px;
   background-color: white;
 }
 
 .delete {
-  color: #c50e32;
+  color: red;
   font-size: 15px;
-  box-shadow: #c50e32 3px 3px 5px 0px;
+  box-shadow: red 3px 3px 5px 0px;
   font-weight: bold;
   background-color: rgb(255 255 255);
 }
@@ -230,13 +233,9 @@ button {
 
 /* ul and li Elements Styles */
 ul {
-  padding: 0;
-  margin: 30px 5px 20px 10px;
-  display: grid;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  grid-template-columns: 32.5% 32.5% 32.5%;
-  justify-content: center;
+  padding: 23px;
+  margin: auto;
+  width: 55vw;
 }
 
 ul li {

@@ -6,7 +6,7 @@ const template = `
 <div class="container">
   <h1>To-Do App</h1>
   <div class="inputs-container">
-      <input type="text" required tabindex="0" class="input-text" maxlength="50" size="29"
+      <input type="text" required tabindex="0" class="input-text" maxlength="100" size="29"
       placeholder="Add items that you want to do...">
       <button class="input-submit" tabindex="1" >+ Add</button>
   </div>
@@ -99,7 +99,7 @@ function addItem() {
           // whitin a text it removes the white spaces
           if (
             spanElement.innerText.trim().replace(/&nbsp;/g, "") != "" &&
-            spanElement.innerText.trim().replace(/&nbsp;/g, "").length <= 50
+            spanElement.innerText.trim().replace(/&nbsp;/g, "").length <= 100
           ) {
             spanElement.innerHTML = spanElement.innerHTML
               .trim()
