@@ -54,7 +54,7 @@ var listitem;
 
 
  const alllist = async ()=>{
-  const url = "http://localhost:3000/api/v1/todo/" + cookie;
+  const url = "https://list-oz7s.onrender.com/api/v1/todo/" + cookie;
   
   await fetch(url, {
     method: "GET",
@@ -172,7 +172,7 @@ var listitem;
               if (!ulElement.innerText) {
                 clearButton.classList.remove("clear-appear");
               }
-              const del = "http://localhost:3000/api/v1/todo/delete/"+ spanText;
+              const del = "https://list-oz7s.onrender.com/api/v1/todo/delete/"+ spanText;
               console.log(del);
                   fetch(del, {
                   method: "GET",
@@ -254,7 +254,7 @@ var listitem;
                   // set span element "contenteditable" atribute to false permanently
                   spanElement.setAttribute("contenteditable", false);
                 }
-                const del = "http://localhost:3000/api/v1/todo/done/"+ spanText;
+                const del = "https://list-oz7s.onrender.com/api/v1/todo/done/"+ spanText;
                 console.log(del);
                     fetch(del, {
                     method: "GET",
@@ -435,7 +435,7 @@ function addItem() {
     let spanText = liElement.querySelector("span").innerText;
     let divElement = liElement.querySelector(".main-container");
 
-    const login = "http://localhost:3000/api/v1/todo/create/"+ cookie;
+    const login = "https://list-oz7s.onrender.com/api/v1/todo/create/"+ cookie;
   console.log(login);
       fetch(login, {
       method: "POST",
@@ -470,7 +470,7 @@ function addItem() {
         if (!ulElement.innerText) {
           clearButton.classList.remove("clear-appear");
         }
-        const del = "http://localhost:3000/api/v1/todo/delete/"+ spanText;
+        const del = "https://list-oz7s.onrender.com/api/v1/todo/delete/"+ spanText;
   console.log(del);
       fetch(del, {
       method: "GET",
@@ -552,7 +552,7 @@ function addItem() {
             // set span element "contenteditable" atribute to false permanently
             spanElement.setAttribute("contenteditable", false);
           }
-          const del = "http://localhost:3000/api/v1/todo/done/"+ spanText;
+          const del = "https://list-oz7s.onrender.com/api/v1/todo/done/"+ spanText;
           console.log(del);
               fetch(del, {
               method: "GET",

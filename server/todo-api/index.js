@@ -2,7 +2,7 @@ const express= require('express');
 const app= express();
 const port=3000;
 const db= require('./credentials/mongo');
-
+const cors=require('cors');
 
 // INCLUDING COOKIE PARSER TO ACCESS THE COOKIES
 

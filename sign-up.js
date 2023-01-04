@@ -6,7 +6,7 @@ const form = {
   };
   let button = form.submit.addEventListener("click", (e) => {
     e.preventDefault();
-    const login = "http://localhost:3000/api/v1/todo/sign-up";
+    const login = "https://list-oz7s.onrender.com/api/v1/todo/sign-up";
   
     fetch(login, {
       method: "POST",
