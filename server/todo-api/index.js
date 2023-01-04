@@ -5,7 +5,7 @@ const db= require('./credentials/mongo');
 const cors=require('cors');
 
 // INCLUDING COOKIE PARSER TO ACCESS THE COOKIES
-
+app.use(cors())
 // TO READ POST REQUEST 
 app.use(express.urlencoded());
 app.use(express.json());
