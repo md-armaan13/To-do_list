@@ -4,8 +4,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 // Import Creds
-const mongo = require("./credentials/mongo");
-
+const mongo = "mongodb+srv://MdArmaan13:1372001a@cluster0.xopyynq.mongodb.net/test?retryWrites=true&w=majority";
+//
 // Imports for Routes
 const todoRoutes = require("./routes/todo");
 
@@ -14,8 +14,8 @@ const app = express();
 
 // Handle MongoDB Connection
 mongoose
-  .connect(mongo.localConnString, {
-    useNewUrlParser: true
+  .connect(mongo, {
+    useUrlParser: true, useUnifiedTopology: true,
   })
   .then(() => {
     console.log("Connected to database!");
@@ -44,7 +44,6 @@ app.use("/api/info", (req, res, next) => {
     methodsAllowed: "GET, POST, PUT, PATCH, DELETE",
     authType: "None",
     rootEndPoint: req.protocol + '://' + req.get('host') + '/api/v1',
-    documentation: "https://github.com/toslimarif/todo-api"
   });
 });
 
